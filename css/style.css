@@ -1,1 +1,260 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'roboto_bold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'roboto_italic';
+    src: url(../fonts/Roboto/Roboto-MediumItalic.ttf);
+}
 
+/* Style for everything not specified, sans-serif as a backup font */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto, sans-serif;
+
+}
+.logo {
+    padding: 30px;
+    font-size: 50px;
+    font-family: Roboto_bold, sans-serif;
+    
+}
+
+header {
+    background-color: #1d2533;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#information_header {
+    padding: 20px;
+    font-size: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 30px;
+    padding: 20px;
+}
+nav a:hover {
+    background-color: #12171f;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+li {
+    display: inline;
+}
+
+
+/* Top part */
+
+.top_part {
+    background-color: #1d2533;
+    color: white;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+}
+
+.textholder1 {
+    max-width: 40%;
+    
+}
+
+.image {
+    max-width: 40%;
+    background-color: grey;
+}
+
+
+h1 {
+    font-family: roboto_bold, sans-serif;
+    font-size: 45px;
+}
+
+
+.button1 {
+    border-radius: 10px;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    background-color: #327cf0;
+    margin-top: 15px;
+}
+.button1:hover {
+    background-color: #245db5;
+    cursor: pointer;
+}
+
+
+/* Information section */
+
+h2,h3,.button1 { /*Making h2,h2 and button1 bold with roboto font*/
+    font-family: roboto_bold, sans-serif;
+}
+.information {
+    text-align: center;
+    padding: 20px;
+}
+
+.information_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.information_box {
+    max-width: 30%;
+    line-height: 25px;
+}
+
+.information_square {
+    border: 3px solid #1d77f5fe;
+    border-radius: 10px;
+    padding: 5% 10%;
+}
+
+
+/* Quote */
+
+.quote {
+    background-color: lightgrey;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+blockquote {
+    padding: 100px;
+    text-align: center;
+    font-family: roboto_italic, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    
+    
+}
+.quoter {
+    font-family: roboto_bold, sans-serif;
+    text-align: right;
+    font-size: medium;
+}
+
+
+/* Call to action */
+
+.call_to_action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    background-color: #1d77f5fe;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.CTA_button {
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 5px 20px;
+    color: white;
+    background-color: #1d77f5fe;
+    margin: 20px;
+}
+.CTA_button:hover {
+    background-color: #245db5;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1d2533;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+
+
+/* Dynamic posts page starts here */
+
+#dynamic_posts {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.post_row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px;
+}
+
+
+.post_content {
+    border: 2px solid #1d2533;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+#dynamic_posts {
+    font-size: 30px;
+    font-family: Roboto_bold, sans-serif;
+}
+
+
+
+
+/* Weather page starts here */
+
+
+#weather_headline {
+    font-size: 30px;
+    font-family: Roboto_bold, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+#weather_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.weather_element {
+    border: 2px solid #1d2533;
+    padding: 30px;
+    background-color: #0c4085;
+    color: white;
+    border-radius: 10px;
+}
